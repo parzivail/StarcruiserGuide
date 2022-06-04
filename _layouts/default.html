@@ -27,7 +27,7 @@
 		<div class="ui equal width stackable grid">
 			<div class="three wide column">
 				<div class="ui relaxed divided list">
-					{% foreach post in site.posts %}
+					{% for post in site.posts %}
 					<a href="{{ site.baseurl }}{{ post.url }}" class="item">
 						<i class="file alternate outline icon"></i>
 						<div class="content">
