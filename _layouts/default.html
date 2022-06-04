@@ -21,7 +21,12 @@
         <img class="logo" src="{{ site.avatar }}">
         {{ site.name }}
       </a>
-      <a href="#" class="item">Home</a>
+    </div>
+    <div class="right menu">
+      <div class="ui container">
+        <a class="header item" href="{{ site.baseurl }}/feed.xml"><i class="rss icon"></i></a>
+        <a class="header item" href="https://github.com/{{ site.footer-links.github }}"><i class="github icon"></i></a>
+      </div>
     </div>
   </div>
 
@@ -40,37 +45,8 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="ui main text container">
-    {{ content }}
-  </div>
-
-  <div class="ui inverted vertical footer segment">
-    <div class="ui center aligned container">
-      <div class="ui horizontal inverted small divided link list">
-        <a class="item" href="{{ site.baseurl }}/feed.xml"><i class="rss icon"></i></a>
-        <a class="item" href="https://github.com/{{ site.footer-links.github }}"><i class="github icon"></i></a>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="wrapper-masthead">
-    <div class="container">
-      <header class="masthead clearfix">
-        <a href="{{ site.baseurl }}/" class="site-avatar"><img src="" /></a>
-
-        <div class="site-info">
-          <h1 class="site-name"></h1>
-          <p class="site-description">{{ site.description }}</p>
-        </div>
-
-        <nav>
-          <a href="{{ site.baseurl }}/">Blog</a>
-          <a href="{{ site.baseurl }}/about">About</a>
-        </nav>
-      </header>
+    <div class="ui main text container">
+      {{ content }}
     </div>
   </div>
 </body>
