@@ -10,7 +10,7 @@ layout: default
     <div class="ui right aligned item">
       <div class="content">
         <div class="ui sub header">Written</div>
-        {{ page.date | date: "%B %e, %Y" }}
+        {% include date.html date=[page.date] format=["%B %o, %Y"] %}
       </div>
     </div>
   </div>

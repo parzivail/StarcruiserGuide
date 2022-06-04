@@ -8,4 +8,4 @@ Everything you've ever wanted to know (or didn't) about the Star Wars: Datapad, 
 
 # Articles
 
-* [Background](2022-06-04-background.md)
+* [Background](/background/)
