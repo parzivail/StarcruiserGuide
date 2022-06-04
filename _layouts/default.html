@@ -24,25 +24,23 @@
   </div>
 
   <div class="ui container">
-    <div class="ui equal width stackable grid">
-      <div class="three wide column">
-        <div class="ui list">
-          {% for post in site.posts %}
-          <div class="item">
-            <i class="file alternate outline icon"></i>
-            <div class="content">
-              <a class="header" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            </div>
-            {% if post.subtitle %} <div class="description">{{ post.subtitle }}</div> {% endif %}
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="column">
-        {{ content }}
-      </div>
-    </div>
-  </div>
+		<div class="ui equal width stackable grid">
+			<div class="three wide column">
+				<div class="ui relaxed divided list">
+					<a href="{{ site.baseurl }}{{ post.url }}" class="item">
+						<i class="file alternate outline icon"></i>
+						<div class="content">
+							<div class="header">{{ post.title }}</div>
+							<div class="description">{{ post.subtitle }}</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="column">
+				{{ content }}
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

@@ -1,0 +1,9 @@
+a[href*="//"]:not([href*="starcruiserguide.com"]):after {
+	font-family: Icons;
+	content: "\f35d";
+	font-size: 60%;
+	color: #ccc;
+	padding-left: 4px;
+	font-weight: normal;
+	vertical-align: top;
+}
