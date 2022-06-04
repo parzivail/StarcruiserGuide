@@ -15,7 +15,7 @@ During a visit to Galactic Starcruiser, each member of my party took different "
 
 Parks at Disney, generally speaking, are "connectivity hostile". Geography, physical structures, and local interference sources (like other guests) often pose a significant threat to RF links, whether it's for a connection to a cellular network, WiFi, or something else.
 
-Environments such as this require special attention to make sure devices can function with as few outages as possible, even while a guest is in an RF "dead zone". This essentially forces all of the logic and assets to be stored locally in the application instead of offloading it to a server. What that means for Datapad is that all of the logic and related data, like chat messages and minigames are all defined, stored, and processed locally.
+Environments such as this require special attention to make sure devices can function with as few outages as possible, even while a guest is in an RF "dead zone". This essentially forces all of the logic and assets to be stored locally in the application instead of offloading it to a server. What that means for Datapad is that all of the logic and related data, like chat messages and minigames, are all defined, stored, and processed locally.
 
 # What is the StarcruiserGuide project?
 

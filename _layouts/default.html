@@ -27,13 +27,15 @@
 		<div class="ui equal width stackable grid">
 			<div class="three wide column">
 				<div class="ui relaxed divided list">
+					{% foreach post in site.posts %}
 					<a href="{{ site.baseurl }}{{ post.url }}" class="item">
 						<i class="file alternate outline icon"></i>
 						<div class="content">
 							<div class="header">{{ post.title }}</div>
-							<div class="description">{{ post.subtitle }}</div>
+							{% if post.subtitle %} <div class="description">{{ post.subtitle }}</div> {% endif %}
 						</div>
 					</a>
+					{% endfor %}
 				</div>
 			</div>
 			<div class="column">
