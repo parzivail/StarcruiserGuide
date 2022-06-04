@@ -1,51 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    {% include meta.html %}
+<head>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  {% include meta.html %}
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/semantic.min.css" />
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
+  <script type="text/javascript" href="{{ site.baseurl }}/assets/semantic.min.js" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}"
+    href="{{ site.baseurl }}/feed.xml" />
+</head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+<body>
+  <div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="{{ site.baseurl }}/" class="header item">
+        <img class="logo" src="{{ site.avatar }}">
+        {{ site.name }}
+      </a>
+      <a href="#" class="item">Home</a>
+    </div>
+  </div>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+  <div class="ui segment">
+    <div class="ui left dividing rail">
+      <div class="ui segment">
+        <div class="ui vertical menu">
+          <div class="item">
+            <div class="header">Posts</div>
+            <div class="menu">
+              {% for post in site.posts %}
+                <a class="item" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+              {% endfor %}
+            </div>
           </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
+        </div>
       </div>
     </div>
+  </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+  <div class="ui main text container">
+    {{ content }}
+  </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+  <div class="ui inverted vertical footer segment">
+    <div class="ui center aligned container">
+      <div class="ui horizontal inverted small divided link list">
+        <a class="item" href="{{ site.baseurl }}/feed.xml"><i class="rss icon"></i></a>
+        <a class="item" href="https://github.com/{{ site.footer-links.github }}"><i class="github icon"></i></a>
       </div>
     </div>
+  </div>
 
-    {% include analytics.html %}
-  </body>
+
+  <div class="wrapper-masthead">
+    <div class="container">
+      <header class="masthead clearfix">
+        <a href="{{ site.baseurl }}/" class="site-avatar"><img src="" /></a>
+
+        <div class="site-info">
+          <h1 class="site-name"></h1>
+          <p class="site-description">{{ site.description }}</p>
+        </div>
+
+        <nav>
+          <a href="{{ site.baseurl }}/">Blog</a>
+          <a href="{{ site.baseurl }}/about">About</a>
+        </nav>
+      </header>
+    </div>
+  </div>
+</body>
+
 </html>

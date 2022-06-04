@@ -2,16 +2,19 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
+<h1 class="ui top attached header">
+  {{ page.title }}
+</h1>
+<div class="ui attached header">
+  <div class="ui horizontal list">
+    <div class="item">
+      <div class="content">
+        <div class="ui sub header">Written</div>
+        {{ page.date | date: "%B %e, %Y" }}
+      </div>
+    </div>
   </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+</div>
+<div class="ui attached segment">
+  <p>{{ content }}</p>
+</div>
