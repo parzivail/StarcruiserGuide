@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/semantic.min.css" />
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
-  <script type="text/javascript" href="{{ site.baseurl }}/assets/semantic.min.js" />
+  <script type="text/javascript" href="{{ site.baseurl }}/assets/semantic.min.js"></script>
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}"
     href="{{ site.baseurl }}/feed.xml" />
@@ -33,7 +33,7 @@
             <div class="header">Posts</div>
             <div class="menu">
               {% for post in site.posts %}
-                <a class="item" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+              <a class="item" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
               {% endfor %}
             </div>
           </div>
