@@ -40,26 +40,7 @@
       </div>
     </div>
     <div class="column">
-      <div class="ui top attached secondary menu">
-        <div class="ui item">
-          <h1 class="ui header">Post Title</h1>
-        </div>
-        <div class="right menu">
-          {% if post.date %}
-          <div class="ui right aligned item">
-            <div class="content">
-              <div class="ui sub header">Published</div>
-              {{ post.date }}
-            </div>
-          </div>
-          {% endif %}
-        </div>
-      </div>
-      <div class="ui bottom attached segment">
-        <p>
-          {{ content }}
-        </p>
-      </div>
+      {{ content }}
     </div>
   </div>
   </div>

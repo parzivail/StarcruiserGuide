@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<h1 class="ui top attached header">
-  {{ page.title }}
-</h1>
-<div class="ui attached header">
-  <div class="ui horizontal list">
-    <div class="item">
+<div class="ui top attached secondary menu">
+  <div class="ui item">
+    <h1 class="ui header">{{ page.title }}</h1>
+  </div>
+  <div class="right menu">
+    <div class="ui right aligned item">
       <div class="content">
         <div class="ui sub header">Written</div>
         {{ page.date | date: "%B %e, %Y" }}
@@ -15,6 +15,8 @@ layout: default
     </div>
   </div>
 </div>
-<div class="ui attached segment">
-  <p>{{ content }}</p>
+<div class="ui bottom attached segment">
+  <p>
+    {{ content }}
+  </p>
 </div>
