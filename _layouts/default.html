@@ -15,22 +15,18 @@
 </head>
 
 <body>
-  <div class="ui fixed inverted menu">
+  <div class="ui inverted menu">
     <div class="ui container">
       <a href="{{ site.baseurl }}/" class="header item">
         <img class="logo" src="{{ site.avatar }}">
         {{ site.name }}
       </a>
-    </div>
-    <div class="right menu">
-      <div class="ui container">
-        <a class="header item" href="{{ site.baseurl }}/feed.xml"><i class="rss icon"></i></a>
-        <a class="header item" href="https://github.com/{{ site.footer-links.github }}"><i class="github icon"></i></a>
-      </div>
+      <a class="header right item" href="{{ site.baseurl }}/feed.xml"><i class="rss icon"></i></a>
+      <a class="header right item" href="https://github.com/{{ site.footer-links.github }}"><i class="github icon"></i></a>
     </div>
   </div>
 
-  <div class="ui segment">
+  <div class="ui main text container">
     <div class="ui left dividing rail">
       <div class="ui segment">
         <div class="ui vertical menu">
@@ -45,9 +41,7 @@
         </div>
       </div>
     </div>
-    <div class="ui main text container">
-      {{ content }}
-    </div>
+    {{ content }}
   </div>
 </body>
 
