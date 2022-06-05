@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tech Stack Overview
-subtitle: Android ↔ Datapad
+subtitle: Library and API notes
 ---
 
 All information is relevant as of v2.19.0 [on Android](https://play.google.com/store/apps/details?id=com.disney.playdisneyparks.goo).
