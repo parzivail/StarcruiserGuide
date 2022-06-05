@@ -1,4 +1,4 @@
-a[href*="//"]:not([href*="starcruiserguide.com"]):after {
+a[href*="//"]:not([href*="starcruiserguide.com"]):not([href*="github.com/parzivail"]):after {
 	font-family: Icons;
 	content: "\f35d";
 	font-size: 60%;
