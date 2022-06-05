@@ -32,7 +32,7 @@ The backend utilizes the following libraries (relevant to Datapad)
   * While seemingly unused in the release build, an empty Firestore environment configuration file is included
   * Datapad data files, stored locally, also seem to be dumps of Firestore databases, with each data file using the following format:
 
-```json
+```json-doc
 {
 	// ...
 	"<Firestore random, unique document ID>": {
