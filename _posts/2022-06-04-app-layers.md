@@ -34,11 +34,11 @@ The backend utilizes the following libraries (relevant to Datapad)
 
 ```json
 {
-	...
-    "<Firestore random, unique document ID>": {
-		<document data>
-    }
-	...
+	// ...
+	"<Firestore random, unique document ID>": {
+		// Document data
+	}
+	// ...
 }
 ```
 
