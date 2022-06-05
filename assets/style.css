@@ -72,12 +72,27 @@
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
 
+/*
+	Allow scrolling in code blocks
+*/
 pre.highlight {
-	overflow: scroll;
+	overflow: auto;
 }
 
-.ui.ribbon.label {
-	margin-bottom: 1.2em;
+/*
+	Format single-line code blocks
+*/
+:not(pre) > code {
+	background-color: #f8f8f8;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+/*
+	One tab is four spaces
+*/
+html {
+	tab-size: 4;
 }
 
 /*
