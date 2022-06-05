@@ -2,13 +2,22 @@
 layout: default
 ---
 
-<div class="ui top attached segment">
-  <h1 class="ui header">{{ page.title }}</h1>
-</div>
-<div class="ui bottom attached segment">
-  <div class="ui ribbon label">{% include date.html date=page.date format="%B %o, %Y" %}</div>
-  <a class="ui right corner label" href="{{ site.github.repository_url }}/blob/gh-pages/{{ page.relative_path }}">
-    <i class="edit outline icon"></i>
-  </a>
-  {{ content }}
+<div class="ui fluid card">
+  <div class="content">
+    <a class="ui right corner label" href="{{ site.github.repository_url }}/edit/gh-pages/{{ page.relative_path }}">
+      <i class="edit outline icon"></i>
+    </a>
+    <div class="header">{{ page.title }}</div>
+    <div class="meta">
+      <span>{% include date.html date=page.date format="%B %o, %Y" %}</span>
+    </div>
+  </div>
+  <div class="content">
+    {{ content }}
+  </div>
+  <div class="extra content">
+    <a class="right floated author" href="{{ site.github.owner_url }}">
+      <img class="ui avatar image" src="{{ site.github.owner_gravatar_url }}"> {{ site.github.owner_name }}
+    </div>
+  </div>
 </div>

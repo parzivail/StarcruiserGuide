@@ -76,6 +76,10 @@ pre.highlight {
 	overflow: scroll;
 }
 
+.ui.ribbon.label {
+	margin-bottom: 1.2em;
+}
+
 /*
 	Add badges to outbound links
 */
