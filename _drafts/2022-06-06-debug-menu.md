@@ -62,7 +62,6 @@ The region is defined as the area contained by 40% and 60% of the view's width, 
 
 # Page 1 → Debug → Beacon Listening System page
 
-
 | Button | Action |
 | --- | --- |
 | ✓ Fake Beacons | Makes the fake debugging beacons visible |
@@ -70,3 +69,33 @@ The region is defined as the area contained by 40% and 60% of the view's width, 
 | ✓ Ignore Checks | Disables range checking on beacons |
 | x Ignore Checks | Enables range checking on beacons |
 | Show | Shows a map of in-range beacons |
+
+# Page 1 → Debug → Desired FPS page
+
+| Button | Action |
+| --- | --- |
+| 15 | Sets the Phaser game target FPS to 15 |
+| 30 | Sets the Phaser game target FPS to 30 |
+| 60 | Sets the Phaser game target FPS to 60 |
+
+# Page 1 → Agenda page
+
+| Button | Action |
+| --- | --- |
+| GetAgenda: PlayAPI | Disables agenda overrides |
+| GetAgenda: Debug A | Forces the agenda to display the "A" override agenda |
+| GetAgenda: Debug B | Forces the agenda to display the "B" override agenda |
+| Multiply xN | Each press will increase N from its starting value of 1, though 10, and wrap back at 1. Entries in the agenda are duplicated N times in the view. |
+
+# Page 1 → Games page
+
+| Button | Action |
+| --- | --- |
+| UnscrambleHero | Opens the UnscrambleHero page |
+| DeviceHack | Opens the DeviceHack page |
+| DroidHack | Opens the DroidHack page |
+| Tangrams | Opens the Tangrams page |
+| SetDifficulty | Opens the SetDifficulty, which allows you to choose a forced game difficulty between 0 and 5 |
+| Toggle Auto-Win | Toggles minigame auto-win |
+| Toggle Show Difficulty | Toggles the visibility of the difficulty text in minigames |
+| Toggle Adhoc Scan UnEncrypted | Force all crate manifest scans to be unencrypted |
