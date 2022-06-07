@@ -123,3 +123,43 @@ The region is defined as the area contained by 40% and 60% of the view's width, 
 | Button | Action |
 | --- | --- |
 | Diff _N_ | For each difficulty between 0 and 5, each button leads to a second page from which you can choose to play a specific level of difficulty _N_, or play a random one |
+
+# Page 1 → Jobs page
+
+| Button | Action |
+| --- | --- |
+| Chat Sequences | Opens a page which allows each chat sequence for each character to be directly initiated |
+| View Unlisted | Toggles showing "unlisted" missins in the job list |
+| Ignore Mission Requirements | Unused |
+
+# Page 1 → Territory War page
+
+| Button | Action |
+| --- | --- |
+| Sequences | Opens a page to start and end individual mock Territory War sequences, from 1 to 5, each with specific faction influences |
+| Countdowns | Opens a page to set the Territory War countdown banner to display a countdown to moments 1, 15, 65, 600, and 6000 minutes in the future |
+| Increment-Active | Increments the faction influence driven by the currently-running sequence by 0.1 |
+| Reset all BLiPS | Fires mock events from each installation beacon using the current game state |
+| Add-Hack-FO | Sets the mock influence of the First Order to 0.5 and the Resistance to 0.3 and installs a faction hack |
+| Add-Hack-Res | Sets the mock influence of the First Order to 0.3 and the Resistance to 0.5 and installs a faction hack |
+
+# Page 1 → Operations Toggles page
+
+| Button | Action |
+| --- | --- |
+| RES JOBS | Opens a page where all Resistance jobs can be marked completed or incomplete |
+| SM JOBS | Opens a page where all Smuggler jobs can be marked completed or incomplete |
+| FO JOBS | Opens a page where all First Order jobs can be marked completed or incomplete |
+| NEU JOBS | Opens a page where all Neutral jobs can be marked completed or incomplete |
+| ✓ Landwide | Enables the "landwide" precondition, allowing all installations to be shown regardless of whether they're part of a mission |
+| x Landwide | Disables the "landwide" precondition |
+| ✓ On Planet | Marks the guest as being present in a Galaxy's Edge park |
+| x On Planet | Marks the guest as being absent from a Galaxy's Edge park |
+| ✓ On SWGS Ship | Marks the guest as being present onboard Galactic Starcruiser |
+| x On SWGS Ship | Marks the guest as being absent from Galactic Starcruiser |
+| Trigger Normal Mode | Puts the Datapad into the "normal" mode |
+| Trigger SWGS Mode (Pre) | Puts the Datapad into the Galactic Starcruiser pre-sail mode |
+| Trigger SWGS_S Mode (Sail) | Puts the Datapad into the Galactic Starcruiser on-voyage mode |
+| Trigger Post SWGS Mode | Puts the Datapad into the Galactic Starcruiser post-sail mode |
+| IGNORE TOGGLES | Globally overrides all other ops toggles to be `true` |
+| USE TOGGLES | Removes the global override to all ops toggles |
