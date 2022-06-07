@@ -99,3 +99,27 @@ The region is defined as the area contained by 40% and 60% of the view's width, 
 | Toggle Auto-Win | Toggles minigame auto-win |
 | Toggle Show Difficulty | Toggles the visibility of the difficulty text in minigames |
 | Toggle Adhoc Scan UnEncrypted | Force all crate manifest scans to be unencrypted |
+
+# Page 1 → Games → UnscrambleHero page
+
+| Button | Action |
+| --- | --- |
+| Diff _N_ | For each difficulty between 0 and 4, each button brings plays a test round of the audio tuning minigame |
+
+# Page 1 → Games → DeviceHack page
+
+| Button | Action |
+| --- | --- |
+| Diff _N_ | For each difficulty between 0 and 5, each button leads to a second page from which you can choose to play a specific level of difficulty _N_, or play a random one |
+
+# Page 1 → Games → DroidHack page
+
+| Button | Action |
+| --- | --- |
+| Diff _N_ | For each difficulty between 0 and 5, each button leads to a second page from which you can choose to play a specific level of difficulty _N_, or play a random one |
+
+# Page 1 → Games → Tangrams page
+
+| Button | Action |
+| --- | --- |
+| Diff _N_ | For each difficulty between 0 and 5, each button leads to a second page from which you can choose to play a specific level of difficulty _N_, or play a random one |
