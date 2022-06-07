@@ -7,17 +7,19 @@ published: true
 
 # Accessing the menu
 
-In the response to the [`GAME_INIT` request](/message-loop/), the native backend has the opportunity to set the `debug` flag to `true`, which will prevnt console logging from being disabled, and allow access to the Datapad debug menu.
+In the response to the [`GAME_INIT` request](/message-loop/), the native backend has the opportunity to set the `debug` flag to `true`, which will prevent console logging from being disabled, and allow access to the Datapad debug menu.
 
 The debug menu is set up to be accessed in two ways, either by using a keyboard and pressing tilde (presumably for emulator use), or by using a gesture. The gesture can be activated by tapping this region 5 times within 1 second:
 
 ![The region you need to gesture within to access the debug menu](/images/main_menu__debug_tap_region.jpg)
 
-The region is defined as the area contained by 40% and 60% of the view's width, and between 0% and 10% of the view's height.
+The region is the area contained between 40% and 60% of the view's width, and between 0% and 10% of the view's height.
 
 | Page 1 | Page 2 |
 | :-: | :-: |
 | ![Page 1 of the debug menu](/images/debug_menu_page1.jpg) | ![Page 2 of the debug menu](/images/debug_menu_page2.jpg) |
+
+Yellow buttons trigger an action, while white buttons lead to "sub-pages" of the current page. Pressing "Back" at any time will bring you back to your previous page, or in the case of the first page, exit you from the debug menu. Pressing the close button immediately closes the menu.
 
 # Page 1
 
@@ -29,7 +31,7 @@ The region is defined as the area contained by 40% and 60% of the view's width, 
 | Games | Opens the Games page |
 | Jobs | Opens the Jobs page |
 | TWAR | Opens the Territory War page |
-| Ops Toggles | Opens the Ops Toggles page |
+| Ops Toggles | Opens the Operations Toggles page |
 | Interactives | Opens the Interactives page |
 | Beacons | Opens the Beacons page |
 | Items | Opens the Items page |
