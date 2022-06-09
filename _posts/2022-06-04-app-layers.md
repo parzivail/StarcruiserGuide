@@ -2,6 +2,7 @@
 layout: post
 title: Tech Stack Overview
 subtitle: Library and API notes
+published: true
 ---
 
 All information is relevant as of v2.19.0 [on Android](https://play.google.com/store/apps/details?id=com.disney.playdisneyparks.goo).
@@ -48,6 +49,8 @@ The backend utilizes the following libraries (relevant to Datapad)
   * It also contains subassemblies that reference minigames for "StormRider", presumably [the ride](https://disney.fandom.com/wiki/StormRider) at Tokyo Disneyland, but I can't figure out why — it closed in 2016 (two years before the app was released) and it would be the only reference to the app having any sort of functionality in Tokyo Disneyland
 
 ## Notes
+
+The backend is likely mostly or completely written in Kotlin due to the high volume of Kotlin-compiler-generated features, stubs, and annotations present throughout the disassembly.
 
 The frontend is served in a [WebView](https://developer.android.com/reference/android/webkit/WebView) that is notable in a few ways:
 
