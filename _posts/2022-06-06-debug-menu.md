@@ -131,7 +131,7 @@ Yellow buttons trigger an action, while white buttons lead to "sub-pages" of the
 | Button | Action |
 | --- | --- |
 | Chat Sequences | Opens a page which allows each chat sequence for each character to be directly initiated |
-| View Unlisted | Toggles showing "unlisted" missins in the job list |
+| View Unlisted | Toggles showing "unlisted" missions in the job list |
 | Ignore Mission Requirements | Unused |
 
 # Page 1 → Territory War page
