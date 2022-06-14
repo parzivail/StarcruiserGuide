@@ -32,7 +32,7 @@ Yellow buttons trigger an action, while white buttons lead to "sub-pages" of the
 | Jobs | Opens the Jobs page |
 | TWAR | Opens the Territory War page |
 | Ops Toggles | Opens the Operations Toggles page |
-| Interactives | Opens the Interactives page |
+| Interactives | Opens a page where each park interactive show effects can be explicitly triggered, like the probe droid, Falcon, etc. |
 | Beacons | Opens the Beacons page |
 | Items | Opens the Items page |
 | Save | Opens the Save page |
@@ -166,4 +166,37 @@ Yellow buttons trigger an action, while white buttons lead to "sub-pages" of the
 | IGNORE TOGGLES | Globally overrides all other ops toggles to be `true` |
 | USE TOGGLES | Removes the global override to all ops toggles |
 
-TODO: Interactives and beyond
+# Page 1 → Beacons page
+
+| Button | Action |
+| --- | --- |
+| _0-10_ | Opens a page where each fake BLiS beacon can be enabled or disabled, and in the case of Territory War-related beacons, increase/decrease faction influence and add/remove skimmers |
+| ✓ Fake Beacons | Enable all debug BLiS beacons |
+| x Fake Beacons | Disable all debug BLiS beacons |
+| Turn On All Beacons | Adds all available beacons to the BLiS fake beacon list |
+
+# Page 1 → Items page
+
+| Button | Action |
+| --- | --- |
+| Achievements | Opens a page where either all achievements or a random one can granted, and achievement granting can be globally enabled or disabled |
+| Transmission, InventoryItem, TransmissionStory, ShipLog, StarMapPiece, Program, Schematic, DroidMemory, SwgsCharacter | Opens a page where each specific item can be individually granted |
+| RandomReward | Grants a random item |
+| Award All | Grants all items |
+| Remove All | Clears your inventory |
+
+# Page 1 → Save page
+
+| Button | Action |
+| --- | --- |
+| Clear Save State | Clears the SWGE save information, disables saving for this session, and exits the Datapad |
+| Clear SWGS Chats | Removes all SWGS chat messages, resets all missions, resets the game state, disables saving for this session, and exits the Datapad |
+
+# Page 1 → Currency page
+
+| Button | Action |
+| --- | --- |
+| +1/10/100/1000 Credits | Adds a specific number of credits to your profile |
+| -1/10/100/1000 Credits | Removes a specific number of credits from your profile |
+| +1% FO/SM/RE | Adds 1% alignment to either your First Order, Smuggler or Resistance alignment |
+| -1% FO/SM/RE | Removes 1% alignment from either your First Order, Smuggler or Resistance alignment |
