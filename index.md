@@ -17,4 +17,5 @@ Everything you've ever wanted to know (or didn't) about the Star Wars: Datapad, 
   * Details about the communication link between the web frontend and native backend, including some of the common request commands and event types
 * [Debug Menu](/debug-menu/)
   * Debugging on the go with various options, overrides, tests, and triggers for every part of the app
-
+* [Breaking the Loop](/breaking-the-loop/)
+  * Using WebSockets to open up the message loop, logging and injecting data to modify the Datapad behavior
