@@ -42,8 +42,8 @@ Yellow buttons trigger an action, while white buttons lead to "sub-pages" of the
 
 | Button | Action |
 | --- | --- |
-| AudioShows... | Opens the AudioShows page |
-| Filters... | Opens the Filters page |
+| AudioShows… | Opens the AudioShows page |
+| Filters… | Opens the Filters page |
 | Park | Opens the Park page |
 | Map | Opens the Map page |
 | Hardware | Opens the Hardware page |
@@ -200,3 +200,34 @@ Yellow buttons trigger an action, while white buttons lead to "sub-pages" of the
 | -1/10/100/1000 Credits | Removes a specific number of credits from your profile |
 | +1% FO/SM/RE | Adds 1% alignment to either your First Order, Smuggler or Resistance alignment |
 | -1% FO/SM/RE | Removes 1% alignment from either your First Order, Smuggler or Resistance alignment |
+
+# Page 2 → AudioShows… page
+
+| Button | Action |
+| --- | --- |
+| Fake Tests… | Opens a page that enables emitting fake Audio Translate beacon payloads with no show specified at 480ms or 120ms intervals |
+| _SHOW NAME_… | Opens a page where each Audio Translate show beacon can be configured to emit fake payloads |
+| Enable | Globally enables Audio Translate shows throughout Datapad |
+| Stop | Halts all fake packet emitting |
+
+# Page 2 → Filters… page
+
+| Button | Action |
+| --- | --- |
+| Proposed… | Opens a page where the "Proposed" filter can be set to low, mid, or high strength or disabled. |
+| DirBlur… | Opens a page where the "DirBlur" filter can be set to low, mid, or high strength or disabled. |
+| Distort… | Opens a page where the "Distort" filter can be set to low, mid, or high strength or disabled. |
+| Noise… | Opens a page where the "Noise" filter can be set to low, mid, or high strength or disabled. |
+| Chroma… | Opens a page where the "Chroma" filter can be set to low, mid, or high strength or disabled. |
+| Bloom… | Opens a page where the "Bloom" filter can be set to low, mid, or high strength or disabled. |
+| Tests… | Opens the Filters Tests page |
+| 🗑 Disable All | Disables all applied filters |
+| Cycle Filters| Incrementally changes the strength and combinations of different filters |
+
+| Filter | Demo |
+| Proposed (High) | |
+| DirBlur (High) | |
+| Distort (High) | ![](https://thumbs.gfycat.com/ZealousSatisfiedAtlanticsharpnosepuffer-size_restricted.gif) |
+| Noise (High) | |
+| Chroma (High) | |
+| Bloom (High) | |
