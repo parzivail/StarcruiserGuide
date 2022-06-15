@@ -34,7 +34,7 @@ var wss = new WebSocketServer(ADAPTER_IP, PORT, true)
 
 # Backend Emulation
 
-The message loop ingest starts at the PlayAPI method `handlePromiseReponse`, which deserializes and bubbles the command message through to the relevant subsystem. We can inject our own messages by passing all incoming socket data straight through that method. We can exiltrate outgoing messages by overwriting the bridge method with a stub that forwards the message over the socket.
+The message loop ingest starts at the PlayAPI method `handlePromiseReponse`, which deserializes and bubbles the command message through to the relevant subsystem. We can inject our own messages by passing all incoming socket data straight through that method. We can exfiltrate outgoing messages by overwriting the bridge method with a stub that forwards the message over the socket.
 
 ```javascript
 const _interopSocket = new WebSocket('wss://YOUR_DOMAIN_NAME.com');
