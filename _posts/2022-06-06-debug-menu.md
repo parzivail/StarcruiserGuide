@@ -224,11 +224,11 @@ Yellow buttons trigger an action, while white buttons lead to "sub-pages" of the
 | 🗑 Disable All | Disables all applied filters |
 | Cycle Filters| Incrementally changes the strength and combinations of different filters |
 
-| Filter | Demo |
-| --- | --- |
-| Proposed (High) | ![]({{site.baseurl}}//images/filters/proposed_high.jpg) |
-| DirBlur (High) | ![]({{site.baseurl}}//images/filters/dirblur_high.jpg) |
-| Distort (High) | ![](https://thumbs.gfycat.com/ZealousSatisfiedAtlanticsharpnosepuffer-size_restricted.gif) |
-| Noise (High) | ![]({{site.baseurl}}//images/filters/noise_high.jpg) |
-| Chroma (High) | ![]({{site.baseurl}}//images/filters/chroma_high.jpg) |
-| Bloom (High) | ![]({{site.baseurl}}//images/filters/bloom_high.jpg) |
+| Filter Demos | |
+| :-: | :-: |
+| Proposed (High) | DirBlur (High) |
+| ![]({{site.baseurl}}/images/filters/proposed_high.jpg) | ![]({{site.baseurl}}/images/filters/dirblur_high.jpg) |
+| Distort (High) | Noise (High) |
+| ![](https://thumbs.gfycat.com/ZealousSatisfiedAtlanticsharpnosepuffer-size_restricted.gif) | ![]({{site.baseurl}}/images/filters/noise_high.jpg) |
+| Chroma (High) | Bloom (High) |
+| ![]({{site.baseurl}}/images/filters/chroma_high.jpg) | ![]({{site.baseurl}}/images/filters/bloom_high.jpg) |
