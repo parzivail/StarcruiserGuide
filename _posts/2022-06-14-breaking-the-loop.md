@@ -1,5 +1,8 @@
 ---
-published: false
+published: true
+layout: post
+subtitle: WebSockets for message loop fun and profit
+title: Breaking the Loop
 ---
 # Overview
 
