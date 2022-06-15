@@ -1,5 +1,6 @@
 ---
 layout: default
+published: true
 ---
 
 # StarcruiserGuide
@@ -14,3 +15,6 @@ Everything you've ever wanted to know (or didn't) about the Star Wars: Datapad, 
   * Brief overview of the technologies that are used in the frontend and backend
 * [Message Loop](/message-loop/)
   * Details about the communication link between the web frontend and native backend, including some of the common request commands and event types
+* [Debug Menu](/debug-menu/)
+  * Debugging on the go with various options, overrides, tests, and triggers for every part of the app
+
