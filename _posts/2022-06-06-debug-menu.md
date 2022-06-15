@@ -46,8 +46,8 @@ Yellow buttons trigger an action, while white buttons lead to "sub-pages" of the
 | Filters… | Opens the Filters page |
 | Park | Opens the Park page |
 | Map | Opens the Map page |
-| Hardware | Opens the Hardware page |
-| Themes | Opens the Themes page |
+| Hardware | Opens a page that allows you to simulate events for device hardware states changing for Bluetooth, location services, and low power mode |
+| Themes | Opens a page where you can cycle through different app skins, including the default SWGE color scheme, the SWGS scheme, and various foreground colors |
 
 # Page 1 → Debug page
 
@@ -232,3 +232,18 @@ Yellow buttons trigger an action, while white buttons lead to "sub-pages" of the
 | ![](https://thumbs.gfycat.com/ZealousSatisfiedAtlanticsharpnosepuffer-size_restricted.gif) | ![]({{site.baseurl}}/images/filters/noise_high.jpg) |
 | Chroma (High) | Bloom (High) |
 | ![]({{site.baseurl}}/images/filters/chroma_high.jpg) | ![]({{site.baseurl}}/images/filters/bloom_high.jpg) |
+
+# Page 2 → Park page
+
+| Button | Action |
+| --- | --- |
+| DLR | Sets your current park to Disneyland (Resort) and reloads the map data |
+| WDW | Sets your current park to Walt Disney World and reloads the map data |
+
+# Page 2 → Map page
+
+| Button | Action |
+| --- | --- |
+| Engine: _PlayAPI/Unlocked/Locked_ | Toggles overriding access to the SWGS Engineering Room, or optionally default to the value associated with your account |
+| Cargo: _PlayAPI/Unlocked/Locked_ | Toggles overriding access to the SWGS Cargo Hold, or optionally default to the value associated with your account |
+| Override Location | Toggles the ability to click a location on the map to override your current location |
