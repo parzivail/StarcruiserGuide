@@ -3,6 +3,8 @@
 
 @import '_semantic-ui';
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
 /*
 	Pygment style converted to CSS
 	Source: https://github.com/richleland/pygments-css/blob/master/default.css
@@ -94,7 +96,7 @@ pre.highlight {
 }
 
 code {
-	font-family: 'Iosevka Web';
+	font-family: 'IBM Plex Mono', monospace;
 	font-variant-ligatures: none;
 	font-feature-settings: "liga" 0;
 }
