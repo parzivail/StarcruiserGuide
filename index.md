@@ -21,3 +21,5 @@ Everything you've ever wanted to know (or didn't) about the Star Wars: Datapad, 
   * A brief breakdown of everything we know about Disney's iBeacon implementation for navigation and show control
 * [Breaking the Loop](/breaking-the-loop/)
   * Using WebSockets to open up the message loop, logging and injecting data to modify the Datapad behavior
+* [SWGE Inspector](/swge-inspector/)
+  * Building a portable sensor platform to log motion, GPS, and Bluetooth information while at the parks — "StarWardriving", if you will
