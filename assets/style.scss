@@ -95,10 +95,20 @@ pre.highlight {
 	border-radius: 3px;
 }
 
+/*
+	Set code block font and prevent ligatures
+*/
 code {
 	font-family: 'IBM Plex Mono', monospace;
 	font-variant-ligatures: none;
 	font-feature-settings: "liga" 0;
+}
+
+/*
+	Prevent images from spilling out of the card
+*/
+img {
+	max-width: 100%;
 }
 
 /*
