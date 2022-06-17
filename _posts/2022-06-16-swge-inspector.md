@@ -44,7 +44,7 @@ It has support for Extended Prediction Orbit (EPO) which theoretically shortens 
 
 ### Bluetooth
 
-I opted to disable the Pi's onboard Bluetooth in favor of an external dongle to be able to use an external antenna. The dongle wasn't immediately supported by kernel 5.15 but I found that the firmware file for the chipset (RTL8761B) just needed an extra `U` placed in the filename (`/lib/firmware/rtl_bt/rtl8761b_fw.bin` → `/lib/firmware/rtl_bt/rtl8761bu_fw.bin`) to denote that the firmware applied was applicable to a USB device.
+I opted to disable the Pi's onboard Bluetooth in favor of an external dongle to be able to use an external antenna. The dongle wasn't immediately supported by kernel 5.15 but I found that the firmware file for the chipset (RTL8761B) just needed an extra `U` placed in the filename (`/lib/firmware/rtl_bt/rtl8761b_fw.bin` → `/lib/firmware/rtl_bt/rtl8761bu_fw.bin`) to denote that the firmware was applicable to USB devices.
 
 # Results
 
