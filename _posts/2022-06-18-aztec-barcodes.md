@@ -17,4 +17,4 @@ In addition to being theming elements throughout the park, many of the crates ar
 
 # Encoded data
 
-Each Aztec matrix encodes 4 or 5 characters of data, in the formats `XX_XX`, `FALNN` and `CASTNN`, where `X` is any uppercase letter and `N` is any digit. These marker IDs are unique to a tag but multiple IDs can point to the same data. Installation data is stored locally within Datapad, a database is included that links between marker IDs and installation IDs. A separate [local document store](/installation-data/) defines data on each installation, linking to their [rewards](/item-data/).
+Each Aztec matrix encodes 5 or 6 characters of data, in the formats `XX_XX`, `FALNN` and `CASTNN`, where `X` is any uppercase letter and `N` is any digit. These marker IDs are unique to a tag but multiple IDs can point to the same data. Installation data is stored locally within Datapad, a database is included that links between marker IDs and installation IDs. A separate [local document store](/installation-data/) defines data on each installation, linking to their [rewards](/item-data/).
