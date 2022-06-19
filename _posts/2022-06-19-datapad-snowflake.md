@@ -6,7 +6,7 @@ subtitle: 'How Datapad makes use of articy:draft'
 ---
 Every single "entity" in Datapad, including every item, beacon, map location, character, chat message, transmission, program, and droid memory, is assigned a unique ID that can be used to reference that entity elsewhere throughout Datapad's frontend. These IDs are not managed directly by the creative authors but are instead generated through [articy:draft](https://www.articy.com/en/), which we can infer is used by the creative team due to various references to Articy related constructs, like the asset partition directories being a subfolder of `articy`.
 
-If Articy has a name for their ID format, I can't find it in their documentation. In this document I'll refer to it as the **Datapad Snowflake** format, since it encodes infomation in roughly the same way that the [Twitter](https://github.com/twitter-archive/snowflake) and [Discord](https://discord.com/developers/docs/reference#snowflakes) snowflakes do.
+If Articy has a name for their ID format, I can't find it in their documentation. Throughout the site I'll refer to it as the **Datapad Snowflake** format, since it encodes infomation in roughly the same way that the [Twitter](https://github.com/twitter-archive/snowflake) and [Discord](https://discord.com/developers/docs/reference#snowflakes) snowflakes do.
 
 # Format
 
@@ -15,7 +15,7 @@ The snowflake is a 64-bit unsigned integer that representes three packed values.
 ```
 Type     User                     Serial
 11111111 111111111111111111111111 11111111111111111111111111111111
-64    57 56                    31 32                             0
+64    57 56                    32 31                             0
 ```
 
 | Field | Description |
