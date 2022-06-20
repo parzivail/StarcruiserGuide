@@ -8,7 +8,7 @@ From scanning and translating to hacking and tuning, _installations_ are points 
 
 # Installation Types
 
-| Installation Type | Installation type ID | Description |
+| Type | ID | Description |
 | --- | --- | --- |
 | Device | `DeviceInstallation` | Used primarily for door access panels, but also used for moisture vaporators, antennas, maps, Zabaka's workshop window, the Falcon, etc. |
 | Droid | `DroidInstallation` | Droids like R-3X in Oga's Cantina, L4-R6 and C2-B9 outside of the droid workshop, etc. |
