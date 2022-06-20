@@ -112,3 +112,16 @@ Notes:
 | Field | Type | Description |
 | --- | --- | --- |
 | `audioTranslateShows` | string[] | Ordered list of [Datapad Snowflakes](/datapad-snowflake/) that represent the [audio translate shows](/item-data/) this installation can trigger in sequence |
+
+## Scan Group Installation
+
+| Field | Type | Description |
+| --- | --- | --- |
+| `installationIds` | string[] | List of [Datapad Snowflakes](/datapad-snowflake/) that represent the installations that the group contains |
+
+## Mid-Level Group Installation
+
+| Field | Type | Description |
+| --- | --- | --- |
+| `installationIds` | string[] | List of [Datapad Snowflakes](/datapad-snowflake/) that represent the installations that the group contains |
+| `canSplitWhenZoomedIn` | bool | True if the map icon can split up at closer zoom levels into the constituent installations |
