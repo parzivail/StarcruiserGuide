@@ -4,7 +4,7 @@ layout: post
 title: Installation Data
 subtitle: How beacon interactions are defined
 ---
-From scanning and translating to hacking and tuning, _installations_ are points within the park where a guest can interact with show element through Datapad (in addition to a few meta-installations). Datapad defines eight types of installations, each with their own unique features or function.
+From scanning and translating to hacking and tuning, _installations_ are points within the park where a guest can interact with show element through Datapad. Datapad defines six types of installations, each with their own unique features or functions, in addition to two meta-installations.
 
 # Installation Types
 
@@ -16,7 +16,7 @@ From scanning and translating to hacking and tuning, _installations_ are points 
 | Scan | `ScanInstallation` | [Crate barcodes](/aztec-barcodes/) that grant rewards |
 | Text Translate | `TextTranslateInstallation` | Areas where Aurebesh is written in a place that can be scanned and translated |
 | Audio Translate | `AudioTranslateInstallation` | Only used in Dok-Ondar's den, to translate a sample of Ithorese |
-| Scan Group (Meta-installation) | `ScanGroupInstallation` | Groups that collect `SCAN` installations into similar or area-based groups, used for specific activities that only require interacting with one crate from each group |
+| Scan Group (Meta-installation) | `ScanGroupInstallation` | Groups `SCAN` installations into similar or area-based groups, used for specific activities that only require interacting with one crate from each group |
 | Mid-Level Group (Meta-installation) | `MidLevelGroupInstallation` | Groups physically localized installations together to group them at far zoom levels on the map |
 
 ## Models
