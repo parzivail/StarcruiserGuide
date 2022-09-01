@@ -127,8 +127,8 @@ That's progress! Here are two more maps, a detail shot of the marketplace and on
 
 ![A political map of Galaxy's Edge plotting beacon and packet locations](/images/packet_mapping/osm_market_beacons.png)
 
-
-![A political map of Galaxy's Edge plotting beacon and packet locations](/images/packet_mapping/osm_map_beacons.jpg)
+(Overview map resized 25%, click to enlarge)
+[![A political map of Galaxy's Edge plotting beacon and packet locations](/images/packet_mapping/osm_map_beacons_small.jpg)](/images/packet_mapping/osm_map_beacons.jpg)
 
 That leaves one byte unknown at offset `0x5`. Only 3 values were observed: `0xA1`, `0xBA`, and `0xBF`. Following the standard set by the droid-related beacons (`Minimum RSSI = (data) - 256`), we would get minimum RSSIs of `-95`, `-70`, and `-65`, respectively. I assume that would indicate the minimum RSSI required to incorporate that beacon into beacon-based navigation or to interact with the installation. All of the values are reasonable, but the exact meaning is still unknown.
 
