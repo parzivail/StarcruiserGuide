@@ -121,7 +121,7 @@ html {
 /*
 	Improve padding around paragraphs
 */
-p {
+.ui.cards > .card > .content p, .ui.card > .content p {
 	margin: 1.5em 0;
 }
 
