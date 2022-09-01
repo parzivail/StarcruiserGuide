@@ -163,3 +163,16 @@ a[href*="//"]:not([href*="starcruiserguide.com"]):not([href*="github.com/parziva
 	font-weight: normal;
 	vertical-align: top;
 }
+
+/*
+	Add badges to personal GitHub links
+*/
+a[href*="github.com/parzivail"])::after {
+  font-family: Icons;
+  content: "\f09b";
+  font-size: 60%;
+  color: #ccc;
+  padding-left: 4px;
+  font-weight: normal;
+  vertical-align: top;
+}
