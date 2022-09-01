@@ -137,6 +137,14 @@ pre, div.highlight {
 }
 
 /*
+	Don't pad avatars
+*/
+.ui.cards > .card .content img, .ui.card .content img.avatar {
+	display: inline;
+	margin: 0;
+}
+
+/*
 	Fix table formatting
 */
 table {
