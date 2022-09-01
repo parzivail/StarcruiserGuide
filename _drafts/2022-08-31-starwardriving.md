@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 subtitle: Speaking dBeacon for fun and profit
 title: StarWardriving
@@ -81,7 +81,7 @@ A mapping between Datapad's 2D plane coordinates was created by overlaying the D
 
 The BLE packets I'm interested in are likely in this format, the beacon format discovered by some other brilliant folks to [emulate droid reaction beacons](https://github.com/ruthsarian/pxt-swge-beacon):
 
-FORMAT IMAGE
+![Droid location beacon format](/images/packet_mapping/location_beacon_example.png)
 
 In Wireshark, we can display only packets that have a valid CRC (as computed by the sniffer) and are advertising with a Company ID of `0x0183`, which is the Company ID assigned to Walt Disney by the Bluetooth SIG. The resulting filter would be:
 
@@ -99,7 +99,7 @@ Of the 140,313 packets captured at the park, this narrows our investigation down
 
 A few packets were captured with the Location and Droid beacon types, but the majority of packets are of a new unknown type, `0x10`. Across the packets, only two bytes seem to be variable:
 
-FORMAT IMAGE
+![Droid location beacon format](/images/packet_mapping/unknown_beacon_example.png)
 
 On a hunch, since the byte at offset `0x4` varied the most, I figured it must be related to the location of the beacon. Inspecting the resources in Datapad, `beacon-data.json` looks promising: it contains entries mapping app installations to "waypoint IDs", which seem to be small integers.
 
