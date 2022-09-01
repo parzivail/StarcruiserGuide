@@ -167,7 +167,7 @@ a[href*="//"]:not([href*="starcruiserguide.com"]):not([href*="github.com/parziva
 /*
 	Add badges to personal GitHub links
 */
-a[href*="github.com/parzivail"])::after {
+a[href*="github.com/parzivail"]::after {
   font-family: Icons;
   content: "\f09b";
   font-size: 60%;
