@@ -121,8 +121,19 @@ html {
 /*
 	Improve padding around paragraphs
 */
-pre, pre.highlight, img {
+pre, div.highlight {
 	margin: 1.5em 0;
+}
+
+/*
+	Center small images
+*/
+.ui.cards > .card .content img, .ui.card .content img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
 }
 
 /*
