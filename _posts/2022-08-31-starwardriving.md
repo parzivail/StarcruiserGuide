@@ -34,7 +34,7 @@ All told, the 3-hour jaunt at Galaxy's Edge generated about 100 megabytes of raw
 | GPS NMEA Sentences | 10.5 MiB |
 | IMU Data | 37.2 MiB |
 | Datapad Logs | 38.5 MiB |
-| **Total** | 94.6 MiB |
+| **Total** | **94.6 MiB** |
 
 ## Time synchronizing
 
@@ -54,7 +54,7 @@ Datapad internally does not work directly with GPS fixes and instead uses the be
     "id": "72057615512826119",
     "x": 0.14887291667593763,
     "y": 0.49989224539017885
-},
+}
 ```
 
 A beacon is mapped to a location thusly:
@@ -68,7 +68,7 @@ A beacon is mapped to a location thusly:
     "name": "blp-02e4b-04",
     "priority": "HIGH",
     "type": "BeaconMarker"
-},
+}
 ```
 
 At Hollywood Studios, this map looks like this, with beacons shown (resized 25%, click to enlarge):
@@ -79,7 +79,7 @@ A mapping between Datapad's 2D plane coordinates was created by overlaying the D
 
 ## BLE
 
-The BLE packets I'm interested in are likely in this format, the beacon format discovered by some other brilliant folks to [emulate droid reaction beacons](https://github.com/ruthsarian/pxt-swge-beacon):
+The BLE packets I'm interested in are likely in this format, the beacon format discovered by some other brilliant folks to [emulate droid "reaction" location beacons](https://github.com/ruthsarian/pxt-swge-beacon):
 
 ![Droid location beacon format](/images/packet_mapping/location_beacon_example.png)
 
@@ -115,7 +115,7 @@ On a hunch, since the byte at offset `0x4` varied the most, I figured it must be
     "playExperienceNameWDW": "wdw-dhs-swge-blp-02e4b-04",
     "type": "Sensor",
     "waypointId": 61
-},
+}
 ```
 
 Plotting the packets versus the beacons on a map near the Droid Depot, and connecting packets to beacons using the byte at offset `0x4` as the waypoint ID yields:
