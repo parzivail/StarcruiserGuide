@@ -46,4 +46,90 @@ Each of the incoming packets are timestamped, but I also wanted them to be posit
 
 I also filtered out fixes that had fewer than 10 satellites providing the fix. Only 4 are required for a basic fix, but 10 was arbitrarily chosen as a good compromise between keeping many points while discarding low-quality indoor points.
 
+Datapad internally does not work directly with GPS fixes and instead uses the beacons for positioning (as described in [the dBeacon post](/dbeacon/)). This means that beacon locations aren't natively given geographic coordinates, and instead are given 2D plane coordinates of the Datapad map image of your park, which is displayed in the map tab of the activity. Each set of plane coordinates are given an ID, which is referenced elsewhere when the location is needed:
+
+```json-doc
+// Excerpt of map-location-data-wdw.json
+"d6T9eMCYs1kCcFx5Esbb": {
+    "id": "72057615512826119",
+    "x": 0.14887291667593763,
+    "y": 0.49989224539017885
+},
+```
+
+A beacon is mapped to a location thusly:
+
+```json-doc
+// Excerpt of map-object-data-wdw.json
+"4bVkyPJvdWG7ud5fLUQz": {
+    "beaconId": "72057602627875400",
+    "id": "72057615512826119",
+    "locationId": "72057615512826119",
+    "name": "blp-02e4b-04",
+    "priority": "HIGH",
+    "type": "BeaconMarker"
+},
+```
+
+At Hollywood Studios, this map looks like this, with beacons shown (resized 25%, click to enlarge):
+
+[![The map of Galaxy's Edge as seen from within the Datapad app, with beacons drawn on top](/images/packet_mapping/map-wdw-beacons-small.jpg)](/images/packet_mapping/map-wdw-beacons.jpg)
+
+A mapping between Datapad's 2D plane coordinates was created by overlaying the Datapad map, with unknown physical boundaries, with a map of known boundaries. The process was eyeballed, and the maps don't quite overlap (the Datapad map is somewhat stylized), but nothing should be off by more than a handful of feet.
+
 ## BLE
+
+The BLE packets I'm interested in are likely in this format, the beacon format discovered by some other folks to emulate droid reaction beacons:
+
+FORMAT IMAGE
+
+In Wireshark, we can display only packets that have a valid CRC (as computed by the sniffer) and are advertising with an Company ID of `0x0183`, which is the Company ID assigned to Walt Disney by the Bluetooth SIG. The resulting filter would be:
+
+```
+(nordic_ble.crcok == 1) && (btcommon.eir_ad.entry.company_id == 0x0183)
+```
+
+Of the 140,313 packets captured at the park, this narrows our investigation down to 6,094, or about 4%. Following the packet format we're intersted in, we expect the manufacturer data to be 6 bytes long, so tacking an extra `(len(btcommon.eir_ad.entry.data) == 6)` onto the filter brings us down to 1,461 packets.
+
+| Packet Type | Identifier | Count |
+| --- | --- | --- |
+| Location | `0x0A` | 114 |
+| Droid | `0x03` | 181 |
+| ??? | `0x10` | 1,166 |
+
+A few packets were captured with the Location and Droid beacon types, but the majority of packets are of a new unknown type, `0x10`. Across the packets, only two bytes seem to be variable:
+
+FORMAT IMAGE
+
+On a hunch, since the byte at offset `0x4` varied the most, I figured it must be related to the location of the beacon. Inspecting the resources in Datapad, `beacon-data.json` looks promising: it contains entries mapping app installations to "waypoint IDs", which seem to be small integers.
+
+```json-doc
+// Excerpt of beacon-data.json
+"CDqjl4fc0gqjsKxsS3op": {
+    "id": "72057602627875400",
+    "installationsUnlocked": [
+        "72057602627878469"
+    ],
+    "name": "blp-02e4b-04",
+    "playExperienceNameDLR": "dlr-dl-swge-blp-02e4b-04",
+    "playExperienceNameWDW": "wdw-dhs-swge-blp-02e4b-04",
+    "type": "Sensor",
+    "waypointId": 61
+},
+```
+
+Plotting the packets versus the beacons on a map near the Droid Depot, and connecting packets to beacons using the byte at offset `0x4` as the waypoint ID yields:
+
+![A political map of Galaxy's Edge plotting beacon and packet locations](/images/packet_mapping/osm_droidbath_beacons.png)
+
+That's progress! Here are two more maps, a detail shot of the marketplace and one of the entire park. On each of the maps, blue points indicate packets, red points indicate beacons, their names, and locations as defined by Datapad, and cyan points indicate orphan points which don't correlate to any known waypoint ID. Since orphans appear in clumps, I assume a few new beacons are transmitting that haven't made their way into production use as of Datapad v2.21.1.
+
+
+![A political map of Galaxy's Edge plotting beacon and packet locations](/images/packet_mapping/osm_market_beacons.png)
+
+
+![A political map of Galaxy's Edge plotting beacon and packet locations](/images/packet_mapping/osm_map_beacons.jpg)
+
+
+
+
