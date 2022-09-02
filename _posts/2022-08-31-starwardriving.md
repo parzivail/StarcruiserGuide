@@ -118,12 +118,16 @@ On a hunch, since the byte at offset `0x4` varied the most, I figured it must be
 }
 ```
 
-Plotting both the packets and the beacons on a map near the Droid Depot and connecting packets to beacons using the byte at offset `0x4` as the waypoint ID yields:
+Plotting both the packets and the beacons on a map near the Droid Depot and connecting packets to beacons using the byte at offset `0x4` as the waypoint ID yields the following:
+
+* Blue points indicate packets
+* Red points indicate beacons, their names, and locations as defined by Datapad
+* Cyan points indicate orphan points which don't correlate to any known waypoint ID
+  * Since orphans appear in clumps, I assume a few new beacons are transmitting waypoint IDs that haven't made their way into production as of Datapad v2.21.1
 
 ![A political map of Galaxy's Edge plotting beacon and packet locations](/images/packet_mapping/osm_droidbath_beacons.png)
 
-That's progress! Here are two more maps, a detail shot of the marketplace and one of the entire park. On each of the maps, blue points indicate packets, red points indicate beacons, their names, and locations as defined by Datapad, and cyan points indicate orphan points which don't correlate to any known waypoint ID. Since orphans appear in clumps, I assume a few new beacons are transmitting waypoint IDs that haven't made their way into production as of Datapad v2.21.1.
-
+That's progress! Here are two more maps, a detail shot of the marketplace and one of the entire park.
 
 ![A political map of Galaxy's Edge plotting beacon and packet locations](/images/packet_mapping/osm_market_beacons.png)
 
