@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-subtitle: Speaking dBeacon for fun and profit
+subtitle: Speaking D-Beacon for fun and profit
 title: StarWardriving
 ---
 # Background
