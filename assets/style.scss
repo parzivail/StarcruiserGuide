@@ -87,6 +87,13 @@ pre.highlight {
 }
 
 /*
+	Increase font size in cards
+*/
+.ui.cards > .card > .content, .ui.card > .content {
+	font-size: 1.15em
+}
+
+/*
 	Format single-line code blocks
 */
 :not(pre) > code {
