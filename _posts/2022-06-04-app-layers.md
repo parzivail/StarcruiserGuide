@@ -46,7 +46,8 @@ The backend utilizes the following libraries (relevant to Datapad)
 * [Project Griffon](https://aep-sdks.gitbook.io/docs/beta/project-griffon), from Adobe Experience Platform
 * [Unity](https://unity.com/), for...?
   * I'm not sure where this is actually utilized, but the build contains a `libil2cpp.so` for `arm64-v8a` and `armeabi-v7a` targets, and disassembling them reveals that it seems to be a fairly fleshed-out C# reimplementation of the Java backend that handles the PlayAPI message loop (see below), as well as an example game, and some basic activities.
-  * It also contains subassemblies that reference minigames for "StormRider", presumably [the ride](https://disney.fandom.com/wiki/StormRider) at Tokyo Disneyland, but I can't figure out why — it closed in 2016 (two years before the app was released) and it would be the only reference to the app having any sort of functionality in Tokyo Disneyland
+  * ~~It also contains subassemblies that reference minigames for "StormRider", presumably [the ride](https://disney.fandom.com/wiki/StormRider) at Tokyo Disneyland, but I can't figure out why — it closed in 2016 (two years before the app was released) and it would be the only reference to the app having any sort of functionality in Tokyo Disneyland~~
+  * The Stormrider subassembly within the Unity application is likely the internal codename for the Disney Uncharted Adventure app
 
 ## Notes
 
@@ -56,4 +57,4 @@ The frontend is served in a [WebView](https://developer.android.com/reference/an
 
 * WebSockets are supported (only secure ones)
   * Likely to support Project Griffon, since Datapad doesn't utilize this feature
-* Hosts the bidirectional async message loop that the frontend PlayAPI uses to issue commands to the Android layer, or recieve events from the Android layer
+* Hosts the bidirectional async message loop that the frontend PlayAPI uses to issue commands to the Android layer, or receive events from the Android layer
